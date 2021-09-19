@@ -11,7 +11,6 @@ function App() {
       .then((response) => setCharacter(response.results))
       .catch((err) => alert(err));
   }, []);
-  console.log(characters);
   return (
     <>
       <Characters characters={characters} />
